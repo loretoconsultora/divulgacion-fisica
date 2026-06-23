@@ -1,288 +1,302 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Tormenta: Física, Química y Biología | Divulgación Científica</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;La Tormenta: Física, Química y Biología | Divulgación Científica&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-  <header class="site-header">
-    <nav class="navbar">
-      <div class="nav-brand">
-        <img src="assets/logo.png" alt="Logo del autor" class="nav-logo" onerror="this.style.display='none'">
-        <span>Divulgación Científica</span>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#temas">Temas</a></li>
-        <li><a href="#visuales">Visuales</a></li>
-        <li><a href="#reto">Reto</a></li>
-        <li><a href="#multimedia">Multimedia</a></li>
-        <li><a href="#autor">Sobre el autor</a></li>
-        <li><a href="#conclusion">Conclusión</a></li>
-      </ul>
-    </nav>
-  </header>
+  &lt;header class="site-header"&gt;
+    &lt;nav class="navbar"&gt;
+      &lt;div class="nav-brand"&gt;
+        &lt;img src="assets/logo.png" alt="Logo del autor" class="nav-logo" onerror="this.style.display='none'"&gt;
+        &lt;span&gt;Divulgación Científica&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;button class="nav-toggle" id="navToggle" aria-label="Abrir menú"&gt;☰&lt;/button&gt;
+      &lt;ul class="nav-links" id="navLinks"&gt;
+        &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#temas"&gt;Temas&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#visuales"&gt;Visuales&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#reto"&gt;Reto&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#multimedia"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#autor"&gt;Sobre el autor&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#conclusion"&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;a href="#reto" class="btn-pill solid nav-cta"&gt;Ir al reto&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
 
-  <main>
+  &lt;main&gt;
 
-    <!-- INICIO -->
-    <section id="inicio" class="section hero">
-      <div class="hero-bg">
-        <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-tormenta.jpg">
-          <source src="assets/hero-tormenta.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="hero-content">
-        <h1>La Tormenta: un fenómeno de Física, Química y Biología</h1>
-        <a href="#temas" class="btn-primary">Explorar los temas</a>
-      </div>
-    </section>
+    &lt;!-- INICIO --&gt;
+    &lt;section id="inicio" class="hero"&gt;
+      &lt;div class="hero-bg"&gt;
+        &lt;video class="hero-video" autoplay muted loop playsinline poster="assets/hero-tormenta.jpg"&gt;
+          &lt;source src="assets/hero-tormenta.mp4" type="video/mp4"&gt;
+        &lt;/video&gt;
+      &lt;/div&gt;
+      &lt;div class="hero-content"&gt;
+        &lt;span class="badge badge-on-dark"&gt;Proyecto escolar de divulgación científica&lt;/span&gt;
+        &lt;h1&gt;La Tormenta: un mismo fenómeno, tres miradas científicas.&lt;/h1&gt;
+        &lt;div class="hero-actions"&gt;
+          &lt;a href="#temas" class="btn-pill solid"&gt;Explorar los temas&lt;/a&gt;
+          &lt;a href="#reto" class="btn-pill outline-on-dark"&gt;Tomar el reto&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-    <!-- TEMAS -->
-    <section id="temas" class="section">
-      <h2>Temas</h2>
-      <p class="section-intro">Fenómenos cotidianos relacionados con la tormenta, explicados desde tres disciplinas científicas.</p>
+    &lt;!-- TEMAS --&gt;
+    &lt;section id="temas" class="section bg-light"&gt;
+      &lt;span class="badge"&gt;Temas&lt;/span&gt;
+      &lt;h2&gt;Fenómenos cotidianos, explicados desde tres ciencias&lt;/h2&gt;
+      &lt;p class="section-intro"&gt;Física, química y biología se cruzan en algo tan simple como una tormenta. Elige una disciplina para explorar sus artículos.&lt;/p&gt;
 
-      <div class="tabs-disciplina">
-        <button class="tab-btn active" data-tab="fisica">Física</button>
-        <button class="tab-btn" data-tab="quimica">Química</button>
-        <button class="tab-btn" data-tab="biologia">Biología</button>
-      </div>
+      &lt;div class="tabs-disciplina"&gt;
+        &lt;button class="tab-btn active" data-tab="fisica"&gt;Física&lt;/button&gt;
+        &lt;button class="tab-btn" data-tab="quimica"&gt;Química&lt;/button&gt;
+        &lt;button class="tab-btn" data-tab="biologia"&gt;Biología&lt;/button&gt;
+      &lt;/div&gt;
 
-      <!-- FÍSICA -->
-      <div class="tab-content active" id="fisica">
-        <article class="card articulo">
-          <h3>Lentes empañados</h3>
-          <p class="meta">Introducción</p>
-          <p>¿Por qué tus lentes se empañan justo antes de que empiece a llover o al entrar de la calle fría a un lugar cálido? La respuesta está en un proceso físico llamado condensación.</p>
-          <p class="meta">Desarrollo</p>
-          <p>El aire siempre contiene vapor de agua, una cantidad que varía según la temperatura. Cuando una superficie fría (como el cristal de tus lentes) entra en contacto con aire más cálido y húmedo, la superficie enfría bruscamente el aire que la rodea. Al bajar la temperatura, el aire pierde su capacidad de retener tanto vapor de agua, y el exceso se condensa en gotitas microscópicas sobre la superficie fría. Antes de una tormenta, la humedad relativa del ambiente aumenta considerablemente, lo que hace este efecto aún más notorio.</p>
-          <p class="meta">Cierre</p>
-          <p>Este mismo principio físico explica el empañamiento de ventanas, espejos del baño y parabrisas: siempre que hay una diferencia de temperatura entre una superficie y el aire húmedo que la rodea, ocurre condensación.</p>
-        </article>
+      &lt;!-- FÍSICA --&gt;
+      &lt;div class="tab-content active" id="fisica"&gt;
+        &lt;article class="card articulo"&gt;
+          &lt;h3&gt;Lentes empañados&lt;/h3&gt;
+          &lt;p class="meta"&gt;Introducción&lt;/p&gt;
+          &lt;p&gt;¿Por qué tus lentes se empañan justo antes de que empiece a llover o al entrar de la calle fría a un lugar cálido? La respuesta está en un proceso físico llamado condensación.&lt;/p&gt;
+          &lt;p class="meta"&gt;Desarrollo&lt;/p&gt;
+          &lt;p&gt;El aire siempre contiene vapor de agua, una cantidad que varía según la temperatura. Cuando una superficie fría (como el cristal de tus lentes) entra en contacto con aire más cálido y húmedo, la superficie enfría bruscamente el aire que la rodea. Al bajar la temperatura, el aire pierde su capacidad de retener tanto vapor de agua, y el exceso se condensa en gotitas microscópicas sobre la superficie fría. Antes de una tormenta, la humedad relativa del ambiente aumenta considerablemente, lo que hace este efecto aún más notorio.&lt;/p&gt;
+          &lt;p class="meta"&gt;Cierre&lt;/p&gt;
+          &lt;p&gt;Este mismo principio físico explica el empañamiento de ventanas, espejos del baño y parabrisas: siempre que hay una diferencia de temperatura entre una superficie y el aire húmedo que la rodea, ocurre condensación.&lt;/p&gt;
+        &lt;/article&gt;
 
-        <article class="card articulo">
-          <h3>El refrigerador y la transferencia de calor</h3>
-          <p class="meta">Introducción</p>
-          <p>Un refrigerador no "crea frío": en realidad extrae calor del interior y lo expulsa hacia afuera, aplicando los mismos principios termodinámicos que mueven las masas de aire en una tormenta.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Dentro del refrigerador circula un gas refrigerante que absorbe calor al evaporarse (enfriando el interior) y lo libera al condensarse en la parte trasera (calentando el ambiente exterior). Este ciclo de evaporación-condensación es exactamente el mismo mecanismo que impulsa la convección atmosférica: el aire caliente y húmedo asciende, se enfría, libera su calor latente al condensarse en nubes, y esa energía liberada alimenta la tormenta.</p>
-          <p class="meta">Cierre</p>
-          <p>Entender el refrigerador ayuda a entender por qué las tormentas son, en el fondo, gigantescas máquinas de transferencia de calor y energía.</p>
-        </article>
+        &lt;article class="card articulo"&gt;
+          &lt;h3&gt;El refrigerador y la transferencia de calor&lt;/h3&gt;
+          &lt;p class="meta"&gt;Introducción&lt;/p&gt;
+          &lt;p&gt;Un refrigerador no "crea frío": en realidad extrae calor del interior y lo expulsa hacia afuera, aplicando los mismos principios termodinámicos que mueven las masas de aire en una tormenta.&lt;/p&gt;
+          &lt;p class="meta"&gt;Desarrollo&lt;/p&gt;
+          &lt;p&gt;Dentro del refrigerador circula un gas refrigerante que absorbe calor al evaporarse (enfriando el interior) y lo libera al condensarse en la parte trasera (calentando el ambiente exterior). Este ciclo de evaporación-condensación es exactamente el mismo mecanismo que impulsa la convección atmosférica: el aire caliente y húmedo asciende, se enfría, libera su calor latente al condensarse en nubes, y esa energía liberada alimenta la tormenta.&lt;/p&gt;
+          &lt;p class="meta"&gt;Cierre&lt;/p&gt;
+          &lt;p&gt;Entender el refrigerador ayuda a entender por qué las tormentas son, en el fondo, gigantescas máquinas de transferencia de calor y energía.&lt;/p&gt;
+        &lt;/article&gt;
 
-        <article class="card articulo">
-          <h3>Rayos y truenos</h3>
-          <p class="meta">Introducción</p>
-          <p>El rayo es una descarga eléctrica gigante, y el trueno es el sonido que produce esa descarga al calentar el aire de forma casi instantánea.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Dentro de una nube de tormenta, el roce entre partículas de hielo y agua genera una separación de cargas eléctricas: las cargas negativas se acumulan en la parte baja de la nube y las positivas en la parte alta (o en el suelo). Cuando la diferencia de potencial es suficientemente grande, el aire se ioniza y permite el paso de una corriente eléctrica intensísima: el rayo. Este calienta el aire circundante hasta unos 30,000 °C en microsegundos, provocando una expansión explosiva que viaja como onda de sonido: el trueno.</p>
-          <p class="meta">Cierre</p>
-          <p>Como la luz viaja mucho más rápido que el sonido, vemos el rayo antes de escuchar el trueno; contando los segundos entre ambos podemos estimar a qué distancia ocurrió la descarga.</p>
-        </article>
-      </div>
+        &lt;article class="card articulo"&gt;
+          &lt;h3&gt;Rayos y truenos&lt;/h3&gt;
+          &lt;p class="meta"&gt;Introducción&lt;/p&gt;
+          &lt;p&gt;El rayo es una descarga eléctrica gigante, y el trueno es el sonido que produce esa descarga al calentar el aire de forma casi instantánea.&lt;/p&gt;
+          &lt;p class="meta"&gt;Desarrollo&lt;/p&gt;
+          &lt;p&gt;Dentro de una nube de tormenta, el roce entre partículas de hielo y agua genera una separación de cargas eléctricas: las cargas negativas se acumulan en la parte baja de la nube y las positivas en la parte alta (o en el suelo). Cuando la diferencia de potencial es suficientemente grande, el aire se ioniza y permite el paso de una corriente eléctrica intensísima: el rayo. Este calienta el aire circundante hasta unos 30,000 °C en microsegundos, provocando una expansión explosiva que viaja como onda de sonido: el trueno.&lt;/p&gt;
+          &lt;p class="meta"&gt;Cierre&lt;/p&gt;
+          &lt;p&gt;Como la luz viaja mucho más rápido que el sonido, vemos el rayo antes de escuchar el trueno; contando los segundos entre ambos podemos estimar a qué distancia ocurrió la descarga.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
 
-      <!-- QUÍMICA -->
-      <div class="tab-content" id="quimica">
-        <article class="card articulo">
-          <h3>El olor a lluvia (petricor)</h3>
-          <p class="meta">Introducción</p>
-          <p>Ese olor característico que aparece justo antes o durante la lluvia tiene nombre: petricor, y es resultado de varios compuestos químicos liberados al ambiente.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Una parte del olor proviene de la geosmina, un compuesto orgánico producido por bacterias del suelo (actinomicetos), que el impacto de las gotas de lluvia libera al aire en forma de aerosol. Otra parte proviene de aceites liberados por las plantas durante periodos secos, que se acumulan en rocas y suelo hasta que la lluvia los libera. Además, las tormentas eléctricas generan ozono (O₃) en la atmósfera superior gracias a la energía de los rayos, y parte de ese ozono desciende, aportando un aroma "fresco" o "metálico" que también asociamos con la tormenta.</p>
-          <p class="meta">Cierre</p>
-          <p>El olfato humano es extremadamente sensible a la geosmina, lo que explica por qué este aroma es tan reconocible incluso en concentraciones mínimas.</p>
-        </article>
+      &lt;!-- QUÍMICA --&gt;
+      &lt;div class="tab-content" id="quimica"&gt;
+        &lt;article class="card articulo"&gt;
+          &lt;h3&gt;El olor a lluvia (petricor)&lt;/h3&gt;
+          &lt;p class="meta"&gt;Introducción&lt;/p&gt;
+          &lt;p&gt;Ese olor característico que aparece justo antes o durante la lluvia tiene nombre: petricor, y es resultado de varios compuestos químicos liberados al ambiente.&lt;/p&gt;
+          &lt;p class="meta"&gt;Desarrollo&lt;/p&gt;
+          &lt;p&gt;Una parte del olor proviene de la geosmina, un compuesto orgánico producido por bacterias del suelo (actinomicetos), que el impacto de las gotas de lluvia libera al aire en forma de aerosol. Otra parte proviene de aceites liberados por las plantas durante periodos secos, que se acumulan en rocas y suelo hasta que la lluvia los libera. Además, las tormentas eléctricas generan ozono (O₃) en la atmósfera superior gracias a la energía de los rayos, y parte de ese ozono desciende, aportando un aroma "fresco" o "metálico" que también asociamos con la tormenta.&lt;/p&gt;
+          &lt;p class="meta"&gt;Cierre&lt;/p&gt;
+          &lt;p&gt;El olfato humano es extremadamente sensible a la geosmina, lo que explica por qué este aroma es tan reconocible incluso en concentraciones mínimas.&lt;/p&gt;
+        &lt;/article&gt;
 
-        <article class="card articulo">
-          <h3>La química de la electricidad atmosférica</h3>
-          <p class="meta">Introducción</p>
-          <p>Además del espectáculo eléctrico, los rayos provocan reacciones químicas en la atmósfera que afectan la composición del aire que respiramos.</p>
-          <p class="meta">Desarrollo</p>
-          <p>La enorme energía de un rayo puede romper las moléculas de nitrógeno (N₂) y oxígeno (O₂) del aire, que normalmente son muy estables. Los átomos liberados se recombinan formando óxidos de nitrógeno (NOx) y ozono (O₃). Los óxidos de nitrógeno, arrastrados por la lluvia, terminan fertilizando el suelo de forma natural, ya que el nitrógeno es un nutriente esencial para las plantas.</p>
-          <p class="meta">Cierre</p>
-          <p>Así, cada tormenta eléctrica actúa, a pequeña escala, como una fábrica natural de fertilizante atmosférico.</p>
-        </article>
-      </div>
+        &lt;article class="card articulo"&gt;
+          &lt;h3&gt;La química de la electricidad atmosférica&lt;/h3&gt;
+          &lt;p class="meta"&gt;Introducción&lt;/p&gt;
+          &lt;p&gt;Además del espectáculo eléctrico, los rayos provocan reacciones químicas en la atmósfera que afectan la composición del aire que respiramos.&lt;/p&gt;
+          &lt;p class="meta"&gt;Desarrollo&lt;/p&gt;
+          &lt;p&gt;La enorme energía de un rayo puede romper las moléculas de nitrógeno (N₂) y oxígeno (O₂) del aire, que normalmente son muy estables. Los átomos liberados se recombinan formando óxidos de nitrógeno (NOx) y ozono (O₃). Los óxidos de nitrógeno, arrastrados por la lluvia, terminan fertilizando el suelo de forma natural, ya que el nitrógeno es un nutriente esencial para las plantas.&lt;/p&gt;
+          &lt;p class="meta"&gt;Cierre&lt;/p&gt;
+          &lt;p&gt;Así, cada tormenta eléctrica actúa, a pequeña escala, como una fábrica natural de fertilizante atmosférico.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
 
-      <!-- BIOLOGÍA -->
-      <div class="tab-content" id="biologia">
-        <article class="card articulo">
-          <h3>Animales que anticipan la tormenta</h3>
-          <p class="meta">Introducción</p>
-          <p>Muchos animales muestran cambios de comportamiento horas antes de que llegue una tormenta, mucho antes de que los humanos noten cualquier señal.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Se cree que algunos animales detectan la caída de presión atmosférica que antecede a las tormentas a través de receptores en el oído interno o en estructuras sensibles a la presión. Las aves, por ejemplo, suelen volar más bajo y buscar refugio cuando la presión baja, porque volar a gran altura se vuelve más difícil. Otros animales podrían percibir cambios en el campo electromagnético atmosférico o detectar infrasonidos (sonidos de muy baja frecuencia) generados por tormentas lejanas, que viajan grandes distancias antes de que la tormenta sea visible.</p>
-          <p class="meta">Cierre</p>
-          <p>Estas adaptaciones sensoriales son producto de la evolución: detectar el peligro con anticipación aumenta las probabilidades de supervivencia.</p>
-        </article>
+      &lt;!-- BIOLOGÍA --&gt;
+      &lt;div class="tab-content" id="biologia"&gt;
+        &lt;article class="card articulo"&gt;
+          &lt;h3&gt;Animales que anticipan la tormenta&lt;/h3&gt;
+          &lt;p class="meta"&gt;Introducción&lt;/p&gt;
+          &lt;p&gt;Muchos animales muestran cambios de comportamiento horas antes de que llegue una tormenta, mucho antes de que los humanos noten cualquier señal.&lt;/p&gt;
+          &lt;p class="meta"&gt;Desarrollo&lt;/p&gt;
+          &lt;p&gt;Se cree que algunos animales detectan la caída de presión atmosférica que antecede a las tormentas a través de receptores en el oído interno o en estructuras sensibles a la presión. Las aves, por ejemplo, suelen volar más bajo y buscar refugio cuando la presión baja, porque volar a gran altura se vuelve más difícil. Otros animales podrían percibir cambios en el campo electromagnético atmosférico o detectar infrasonidos (sonidos de muy baja frecuencia) generados por tormentas lejanas, que viajan grandes distancias antes de que la tormenta sea visible.&lt;/p&gt;
+          &lt;p class="meta"&gt;Cierre&lt;/p&gt;
+          &lt;p&gt;Estas adaptaciones sensoriales son producto de la evolución: detectar el peligro con anticipación aumenta las probabilidades de supervivencia.&lt;/p&gt;
+        &lt;/article&gt;
 
-        <article class="card articulo">
-          <h3>Plantas y la respuesta a la lluvia</h3>
-          <p class="meta">Introducción</p>
-          <p>Las plantas también "responden" a la llegada de una tormenta, aunque no de forma consciente, sino a través de mecanismos fisiológicos.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Ante la caída de humedad relativa y presión que anticipan la lluvia, muchas plantas cierran parcialmente sus estomas (los poros de las hojas) para regular la pérdida de agua. Algunas especies liberan compuestos volátiles (los mismos aceites que contribuyen al petricor) como parte de su respuesta al estrés hídrico de la temporada seca. Cuando finalmente llega el agua, las raíces aumentan la absorción y se reactivan procesos metabólicos que estaban en pausa.</p>
-          <p class="meta">Cierre</p>
-          <p>Esto demuestra que las plantas, aunque inmóviles, tienen mecanismos biológicos finamente ajustados para responder a los cambios atmosféricos que preceden a una tormenta.</p>
-        </article>
-      </div>
-    </section>
+        &lt;article class="card articulo"&gt;
+          &lt;h3&gt;Plantas y la respuesta a la lluvia&lt;/h3&gt;
+          &lt;p class="meta"&gt;Introducción&lt;/p&gt;
+          &lt;p&gt;Las plantas también "responden" a la llegada de una tormenta, aunque no de forma consciente, sino a través de mecanismos fisiológicos.&lt;/p&gt;
+          &lt;p class="meta"&gt;Desarrollo&lt;/p&gt;
+          &lt;p&gt;Ante la caída de humedad relativa y presión que anticipan la lluvia, muchas plantas cierran parcialmente sus estomas (los poros de las hojas) para regular la pérdida de agua. Algunas especies liberan compuestos volátiles (los mismos aceites que contribuyen al petricor) como parte de su respuesta al estrés hídrico de la temporada seca. Cuando finalmente llega el agua, las raíces aumentan la absorción y se reactivan procesos metabólicos que estaban en pausa.&lt;/p&gt;
+          &lt;p class="meta"&gt;Cierre&lt;/p&gt;
+          &lt;p&gt;Esto demuestra que las plantas, aunque inmóviles, tienen mecanismos biológicos finamente ajustados para responder a los cambios atmosféricos que preceden a una tormenta.&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-    <!-- VISUALES -->
-    <section id="visuales" class="section alt-bg">
-      <h2>Visuales</h2>
-      <p class="section-intro">Comparaciones interactivas para entender mejor los conceptos físicos detrás de la tormenta.</p>
+    &lt;!-- VISUALES --&gt;
+    &lt;section id="visuales" class="section bg-dark"&gt;
+      &lt;span class="badge badge-on-dark"&gt;Visuales&lt;/span&gt;
+      &lt;h2 class="on-dark"&gt;Comparaciones interactivas&lt;/h2&gt;
+      &lt;p class="section-intro on-dark-muted"&gt;Mueve los controles para entender mejor los conceptos físicos detrás de la tormenta.&lt;/p&gt;
 
-      <div class="visual-grid">
-        <div class="card visual-card">
-          <h3>Energía potencial vs. energía cinética</h3>
-          <p>Antes de caer, una gota de lluvia en lo alto de la nube tiene energía potencial gravitatoria. Al caer, esa energía se transforma en energía cinética (movimiento).</p>
-          <div class="slider-container">
-            <input type="range" min="0" max="100" value="0" class="slider" id="energiaSlider">
-            <div class="bar-chart">
-              <div class="bar potencial" id="barPotencial"><span>Potencial</span></div>
-              <div class="bar cinetica" id="barCinetica"><span>Cinética</span></div>
-            </div>
-            <p class="slider-label">Mueve el control para simular la caída de la gota</p>
-          </div>
-        </div>
+      &lt;div class="visual-grid"&gt;
+        &lt;div class="card card-dark visual-card"&gt;
+          &lt;h3&gt;Energía potencial vs. energía cinética&lt;/h3&gt;
+          &lt;p&gt;Antes de caer, una gota de lluvia en lo alto de la nube tiene energía potencial gravitatoria. Al caer, esa energía se transforma en energía cinética (movimiento).&lt;/p&gt;
+          &lt;div class="slider-container"&gt;
+            &lt;input type="range" min="0" max="100" value="0" class="slider" id="energiaSlider"&gt;
+            &lt;div class="bar-chart"&gt;
+              &lt;div class="bar potencial" id="barPotencial"&gt;&lt;span&gt;Potencial&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="bar cinetica" id="barCinetica"&gt;&lt;span&gt;Cinética&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p class="slider-label"&gt;Mueve el control para simular la caída de la gota&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
-        <div class="card visual-card">
-          <h3>Fuerza vs. masa (segunda ley de Newton)</h3>
-          <p>El viento de una tormenta ejerce fuerza sobre los objetos. Según F = m·a, a mayor masa, se necesita más fuerza para producir la misma aceleración.</p>
-          <div class="slider-container">
-            <input type="range" min="1" max="10" value="1" class="slider" id="masaSlider">
-            <p>Masa del objeto: <span id="masaValor">1</span> kg</p>
-            <p>Fuerza necesaria (con aceleración fija de 5 m/s²): <span id="fuerzaValor">5</span> N</p>
-            <div class="bar-chart">
-              <div class="bar fuerza" id="barFuerza"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+        &lt;div class="card card-dark visual-card"&gt;
+          &lt;h3&gt;Fuerza vs. masa (segunda ley de Newton)&lt;/h3&gt;
+          &lt;p&gt;El viento de una tormenta ejerce fuerza sobre los objetos. Según F = m·a, a mayor masa, se necesita más fuerza para producir la misma aceleración.&lt;/p&gt;
+          &lt;div class="slider-container"&gt;
+            &lt;input type="range" min="1" max="10" value="1" class="slider" id="masaSlider"&gt;
+            &lt;p&gt;Masa del objeto: &lt;span id="masaValor"&gt;1&lt;/span&gt; kg&lt;/p&gt;
+            &lt;p&gt;Fuerza necesaria (con aceleración fija de 5 m/s²): &lt;span id="fuerzaValor"&gt;5&lt;/span&gt; N&lt;/p&gt;
+            &lt;div class="bar-chart"&gt;
+              &lt;div class="bar fuerza" id="barFuerza"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="card infografia-placeholder">
-        <h3>📊 Infografías</h3>
-        <p>Espacio reservado para infografías del proyecto (ciclo del agua, formación del rayo, cadena de reacciones químicas, etc.).</p>
-        <div class="infografia-grid">
-          <div class="infografia-slot">Infografía 1<br><span>(próximamente)</span></div>
-          <div class="infografia-slot">Infografía 2<br><span>(próximamente)</span></div>
-          <div class="infografia-slot">Infografía 3<br><span>(próximamente)</span></div>
-        </div>
-      </div>
-    </section>
+      &lt;div class="card card-dark infografia-placeholder"&gt;
+        &lt;h3&gt;Infografías&lt;/h3&gt;
+        &lt;p&gt;Espacio reservado para infografías del proyecto (ciclo del agua, formación del rayo, cadena de reacciones químicas, etc.).&lt;/p&gt;
+        &lt;div class="infografia-grid"&gt;
+          &lt;div class="infografia-slot"&gt;&lt;span class="num"&gt;01&lt;/span&gt;Infografía 1&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="infografia-slot"&gt;&lt;span class="num"&gt;02&lt;/span&gt;Infografía 2&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="infografia-slot"&gt;&lt;span class="num"&gt;03&lt;/span&gt;Infografía 3&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-    <!-- RETO -->
-    <section id="reto" class="section">
-      <h2>Reto: pon a prueba lo que aprendiste</h2>
-      <p class="section-intro">Responde estas 3 preguntas sobre la tormenta vista desde la física, la química y la biología.</p>
+    &lt;!-- RETO --&gt;
+    &lt;section id="reto" class="section bg-light"&gt;
+      &lt;span class="badge"&gt;Reto&lt;/span&gt;
+      &lt;h2&gt;Pon a prueba lo que aprendiste&lt;/h2&gt;
+      &lt;p class="section-intro"&gt;Responde estas 3 preguntas sobre la tormenta vista desde la física, la química y la biología.&lt;/p&gt;
 
-      <div class="card quiz-container" id="quizContainer">
-        <div class="quiz-question" data-question="1">
-          <h3>1. ¿Por qué vemos el rayo antes de escuchar el trueno?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option">Porque el rayo ocurre antes que el trueno</button>
-            <button class="quiz-option correct">Porque la luz viaja más rápido que el sonido</button>
-            <button class="quiz-option">Porque el sonido se pierde en las nubes</button>
-          </div>
-          <p class="quiz-feedback"></p>
-        </div>
+      &lt;div class="card quiz-container" id="quizContainer"&gt;
+        &lt;div class="quiz-question" data-question="1"&gt;
+          &lt;h3&gt;1. ¿Por qué vemos el rayo antes de escuchar el trueno?&lt;/h3&gt;
+          &lt;div class="quiz-options"&gt;
+            &lt;button class="quiz-option"&gt;Porque el rayo ocurre antes que el trueno&lt;/button&gt;
+            &lt;button class="quiz-option correct"&gt;Porque la luz viaja más rápido que el sonido&lt;/button&gt;
+            &lt;button class="quiz-option"&gt;Porque el sonido se pierde en las nubes&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;p class="quiz-feedback"&gt;&lt;/p&gt;
+        &lt;/div&gt;
 
-        <div class="quiz-question" data-question="2">
-          <h3>2. ¿Qué compuesto producido por bacterias del suelo es responsable del característico olor a lluvia?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option">Ozono</button>
-            <button class="quiz-option correct">Geosmina</button>
-            <button class="quiz-option">Nitrógeno líquido</button>
-          </div>
-          <p class="quiz-feedback"></p>
-        </div>
+        &lt;div class="quiz-question" data-question="2"&gt;
+          &lt;h3&gt;2. ¿Qué compuesto producido por bacterias del suelo es responsable del característico olor a lluvia?&lt;/h3&gt;
+          &lt;div class="quiz-options"&gt;
+            &lt;button class="quiz-option"&gt;Ozono&lt;/button&gt;
+            &lt;button class="quiz-option correct"&gt;Geosmina&lt;/button&gt;
+            &lt;button class="quiz-option"&gt;Nitrógeno líquido&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;p class="quiz-feedback"&gt;&lt;/p&gt;
+        &lt;/div&gt;
 
-        <div class="quiz-question" data-question="3">
-          <h3>3. ¿Cómo es que algunos animales anticipan la llegada de una tormenta?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option correct">Detectan cambios de presión atmosférica e infrasonidos</button>
-            <button class="quiz-option">Reciben mensajes de otros animales</button>
-            <button class="quiz-option">No pueden anticiparla, es un mito</button>
-          </div>
-          <p class="quiz-feedback"></p>
-        </div>
+        &lt;div class="quiz-question" data-question="3"&gt;
+          &lt;h3&gt;3. ¿Cómo es que algunos animales anticipan la llegada de una tormenta?&lt;/h3&gt;
+          &lt;div class="quiz-options"&gt;
+            &lt;button class="quiz-option correct"&gt;Detectan cambios de presión atmosférica e infrasonidos&lt;/button&gt;
+            &lt;button class="quiz-option"&gt;Reciben mensajes de otros animales&lt;/button&gt;
+            &lt;button class="quiz-option"&gt;No pueden anticiparla, es un mito&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;p class="quiz-feedback"&gt;&lt;/p&gt;
+        &lt;/div&gt;
 
-        <div class="quiz-result" id="quizResult"></div>
-        <button class="btn-primary" id="quizReset">Reiniciar reto</button>
-      </div>
+        &lt;div class="quiz-result" id="quizResult"&gt;&lt;/div&gt;
+        &lt;button class="btn-pill solid" id="quizReset"&gt;Reiniciar reto&lt;/button&gt;
+      &lt;/div&gt;
 
-      <div class="card minijuego-placeholder">
-        <h3>🎮 Mini-juego</h3>
-        <p>Espacio reservado para un mini-juego interactivo adicional sobre la tormenta (próxima fase del proyecto).</p>
-      </div>
-    </section>
+      &lt;div class="card minijuego-placeholder"&gt;
+        &lt;h3&gt;Mini-juego&lt;/h3&gt;
+        &lt;p&gt;Espacio reservado para un mini-juego interactivo adicional sobre la tormenta (próxima fase del proyecto).&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-    <!-- MULTIMEDIA -->
-    <section id="multimedia" class="section alt-bg">
-      <h2>Multimedia</h2>
-      <p class="section-intro">Videos y podcast del proyecto. Estos espacios se completarán cuando el material esté grabado.</p>
+    &lt;!-- MULTIMEDIA --&gt;
+    &lt;section id="multimedia" class="section bg-dark"&gt;
+      &lt;span class="badge badge-on-dark"&gt;Multimedia&lt;/span&gt;
+      &lt;h2 class="on-dark"&gt;Videos y podcast&lt;/h2&gt;
+      &lt;p class="section-intro on-dark-muted"&gt;Estos espacios se completarán cuando el material esté grabado.&lt;/p&gt;
 
-      <div class="media-grid">
-        <div class="card media-card">
-          <h3>🎥 Videos</h3>
-          <div class="media-placeholder">
-            <p>Espacio reservado para video 1<br><span>(próximamente)</span></p>
-          </div>
-          <div class="media-placeholder">
-            <p>Espacio reservado para video 2<br><span>(próximamente)</span></p>
-          </div>
-        </div>
+      &lt;div class="media-grid"&gt;
+        &lt;div class="card card-dark media-card"&gt;
+          &lt;h3&gt;Videos&lt;/h3&gt;
+          &lt;div class="media-placeholder"&gt;
+            &lt;p&gt;Espacio reservado para video 1&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="media-placeholder"&gt;
+            &lt;p&gt;Espacio reservado para video 2&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
-        <div class="card media-card">
-          <h3>🎙️ Podcast</h3>
-          <div class="media-placeholder">
-            <p>Episodio 1: Física del rayo<br><span>(próximamente)</span></p>
-          </div>
-          <div class="media-placeholder">
-            <p>Episodio 2: Química del olor a lluvia<br><span>(próximamente)</span></p>
-          </div>
-          <div class="media-placeholder">
-            <p>Episodio 3: Biología de la anticipación animal y vegetal<br><span>(próximamente)</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
+        &lt;div class="card card-dark media-card"&gt;
+          &lt;h3&gt;Podcast&lt;/h3&gt;
+          &lt;div class="media-placeholder"&gt;
+            &lt;p&gt;Episodio 1: Física del rayo&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="media-placeholder"&gt;
+            &lt;p&gt;Episodio 2: Química del olor a lluvia&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="media-placeholder"&gt;
+            &lt;p&gt;Episodio 3: Biología de la anticipación animal y vegetal&lt;br&gt;&lt;span class="muted"&gt;(próximamente)&lt;/span&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-    <!-- SOBRE EL AUTOR -->
-    <section id="autor" class="section">
-      <h2>Sobre el autor</h2>
-      <div class="card autor-card">
-        <img src="assets/foto-autor.jpg" alt="Foto del autor" class="autor-foto" onerror="this.src='assets/placeholder.svg'">
-        <div class="autor-info">
-          <h3>Diego de Jesús Arias</h3>
-          <p>Autor de este proyecto de divulgación científica, enfocado en explicar un fenómeno cotidiano —la tormenta— desde la perspectiva de la física, la química y la biología.</p>
-          <p>Proyecto individual realizado como parte de una evaluación escolar de divulgación científica.</p>
-        </div>
-      </div>
-    </section>
+    &lt;!-- SOBRE EL AUTOR --&gt;
+    &lt;section id="autor" class="section bg-light"&gt;
+      &lt;span class="badge"&gt;Sobre el autor&lt;/span&gt;
+      &lt;h2&gt;El equipo detrás del proyecto&lt;/h2&gt;
+      &lt;div class="card autor-card"&gt;
+        &lt;img src="assets/foto-autor.jpg" alt="Foto del autor" class="autor-foto" onerror="this.src='assets/placeholder.svg'"&gt;
+        &lt;div class="autor-info"&gt;
+          &lt;h3&gt;Diego de Jesús Arias&lt;/h3&gt;
+          &lt;p&gt;Autor de este proyecto de divulgación científica, enfocado en explicar un fenómeno cotidiano —la tormenta— desde la perspectiva de la física, la química y la biología.&lt;/p&gt;
+          &lt;p&gt;Proyecto individual realizado como parte de una evaluación escolar de divulgación científica.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-    <!-- CONCLUSIÓN -->
-    <section id="conclusion" class="section alt-bg">
-      <h2>Conclusión</h2>
-      <div class="card">
-        <p>La tormenta es mucho más que un fenómeno meteorológico: es un punto de encuentro entre disciplinas científicas. La física explica la electricidad, el sonido y el movimiento del aire; la química explica los olores y reacciones atmosféricas; la biología explica cómo los seres vivos perciben y responden a estos cambios.</p>
-        <p>Comprender un mismo fenómeno desde distintas ciencias nos ayuda a apreciar la complejidad y la interconexión del mundo natural, y demuestra que la curiosidad científica no conoce fronteras entre materias.</p>
-      </div>
-    </section>
+    &lt;!-- CONCLUSIÓN --&gt;
+    &lt;section id="conclusion" class="section bg-dark"&gt;
+      &lt;div class="conclusion-card"&gt;
+        &lt;span class="badge badge-on-dark"&gt;Conclusión&lt;/span&gt;
+        &lt;h2 class="on-dark"&gt;La ciencia no conoce fronteras entre materias&lt;/h2&gt;
+        &lt;p class="on-dark-muted"&gt;La tormenta es mucho más que un fenómeno meteorológico: es un punto de encuentro entre disciplinas científicas. La física explica la electricidad, el sonido y el movimiento del aire; la química explica los olores y reacciones atmosféricas; la biología explica cómo los seres vivos perciben y responden a estos cambios.&lt;/p&gt;
+        &lt;p class="on-dark-muted"&gt;Comprender un mismo fenómeno desde distintas ciencias nos ayuda a apreciar la complejidad y la interconexión del mundo natural, y demuestra que la curiosidad científica no conoce fronteras entre materias.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-  </main>
+  &lt;/main&gt;
 
-  <footer class="site-footer">
-    <p>Proyecto de divulgación científica — La Tormenta: Física, Química y Biología</p>
-    <p>Autor: Diego de Jesús Arias</p>
-  </footer>
+  &lt;footer class="site-footer"&gt;
+    &lt;div class="footer-top"&gt;
+      &lt;p&gt;Proyecto de divulgación científica — La Tormenta: Física, Química y Biología&lt;/p&gt;
+      &lt;p&gt;Autor: Diego de Jesús Arias&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="footer-wordmark"&gt;Divulgación Científica&lt;/div&gt;
+  &lt;/footer&gt;
 
-  <script src="script.js"></script>
-</body>
-</html>
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;

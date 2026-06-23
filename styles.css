@@ -400,16 +400,92 @@ a {
 
 .ciencia-diagrama {
   background: #ffffff;
-  border: 1px dashed var(--border-light);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius);
   min-height: 320px;
   display: flex;
   align-items: center;
+  padding: 1.8rem 1.6rem;
+}
+
+/* DIAGRAMA MINI (pasos animados) */
+.diagrama-mini {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.diagrama-paso {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 0.9rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.diagrama-paso:last-child {
+  padding-bottom: 0;
+}
+
+.diagrama-paso:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 42px;
+  bottom: -1.5rem;
+  width: 2px;
+  background-image: repeating-linear-gradient(to bottom, var(--color-teal) 0 6px, transparent 6px 12px);
+  background-size: 2px 24px;
+  animation: flow-line 1s linear infinite;
+}
+
+.diagrama-icono {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-light);
+  border: 2px solid var(--color-teal);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  font-size: 1.25rem;
+  z-index: 1;
+  animation: pulse-icon 2.6s ease-in-out infinite;
+}
+
+.diagrama-paso:nth-child(1) .diagrama-icono { animation-delay: 0s; }
+.diagrama-paso:nth-child(2) .diagrama-icono { animation-delay: 0.3s; }
+.diagrama-paso:nth-child(3) .diagrama-icono { animation-delay: 0.6s; }
+.diagrama-paso:nth-child(4) .diagrama-icono { animation-delay: 0.9s; }
+.diagrama-paso:nth-child(5) .diagrama-icono { animation-delay: 1.2s; }
+
+.diagrama-texto-paso {
+  font-size: 0.85rem;
   color: var(--ink-muted);
-  font-size: 0.95rem;
-  padding: 1.5rem;
+  align-self: center;
+}
+
+.diagrama-texto-paso strong {
+  display: block;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+@keyframes flow-line {
+  from { background-position: 0 0; }
+  to { background-position: 0 24px; }
+}
+
+@keyframes pulse-icon {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(23, 112, 153, 0.3);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 6px rgba(23, 112, 153, 0.12);
+  }
 }
 
 /* VISUALES */

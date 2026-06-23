@@ -189,7 +189,19 @@
 
       <div class="visual-grid">
         <div class="card card-dark visual-card">
-          <h3>Presión atmosférica y comportamiento animal</h3>
+          <h3>Ciclo completo de la tormenta <span class="visual-card-tag">(Desde la física)</span></h3>
+          <p>Desliza la línea de tiempo para recorrer las etapas de una tormenta, desde que el aire comienza a subir hasta que el cielo se despeja.</p>
+          <div class="slider-container">
+            <input type="range" min="0" max="100" value="0" class="slider" id="cicloSlider">
+            <div class="ciclo-box" id="cicloBox">
+              <div class="ciclo-icono" id="cicloIcono">🌬️</div>
+              <p class="ciclo-etapa" id="cicloEtapa">Aire cálido asciende</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-dark visual-card">
+          <h3>Presión atmosférica y comportamiento animal <span class="visual-card-tag">(Desde la biología)</span></h3>
           <p>Antes de una tormenta, la presión atmosférica cae. Muchos animales detectan ese cambio y ajustan su vuelo o comportamiento en consecuencia.</p>
           <div class="slider-container">
             <input type="range" min="980" max="1030" value="1013" class="slider" id="presionSlider">
@@ -198,18 +210,6 @@
               <div class="ave-icono" id="aveIcono">🐦</div>
             </div>
             <p class="slider-label" id="estadoTormenta">Todo tranquilo</p>
-          </div>
-        </div>
-
-        <div class="card card-dark visual-card">
-          <h3>Ciclo completo de la tormenta</h3>
-          <p>Desliza la línea de tiempo para recorrer las etapas de una tormenta, desde que el aire comienza a subir hasta que el cielo se despeja.</p>
-          <div class="slider-container">
-            <input type="range" min="0" max="100" value="0" class="slider" id="cicloSlider">
-            <div class="ciclo-box" id="cicloBox">
-              <div class="ciclo-icono" id="cicloIcono">🌬️</div>
-              <p class="ciclo-etapa" id="cicloEtapa">Aire cálido asciende</p>
-            </div>
           </div>
         </div>
       </div>

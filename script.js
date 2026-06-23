@@ -26,36 +26,6 @@ tabButtons.forEach((btn) => {
   });
 });
 
-// Visual: energía potencial vs cinética
-const energiaSlider = document.getElementById('energiaSlider');
-const barPotencial = document.getElementById('barPotencial');
-const barCinetica = document.getElementById('barCinetica');
-
-if (energiaSlider) {
-  energiaSlider.addEventListener('input', () => {
-    const caida = Number(energiaSlider.value);
-    barPotencial.style.height = `${100 - caida}%`;
-    barCinetica.style.height = `${caida}%`;
-  });
-}
-
-// Visual: fuerza vs masa
-const masaSlider = document.getElementById('masaSlider');
-const masaValor = document.getElementById('masaValor');
-const fuerzaValor = document.getElementById('fuerzaValor');
-const barFuerza = document.getElementById('barFuerza');
-const ACELERACION = 5; // m/s^2, fija para la demostración
-
-if (masaSlider) {
-  masaSlider.addEventListener('input', () => {
-    const masa = Number(masaSlider.value);
-    const fuerza = masa * ACELERACION;
-    masaValor.textContent = masa;
-    fuerzaValor.textContent = fuerza;
-    barFuerza.style.height = `${Math.min(fuerza, 100)}%`;
-  });
-}
-
 // Visual: presión atmosférica vs comportamiento animal
 const presionSlider = document.getElementById('presionSlider');
 const presionValor = document.getElementById('presionValor');

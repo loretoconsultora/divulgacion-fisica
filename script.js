@@ -56,6 +56,59 @@ if (masaSlider) {
   });
 }
 
+// Visual: presión atmosférica vs comportamiento animal
+const presionSlider = document.getElementById('presionSlider');
+const presionValor = document.getElementById('presionValor');
+const aveIcono = document.getElementById('aveIcono');
+const estadoTormenta = document.getElementById('estadoTormenta');
+const cieloBox = document.querySelector('.cielo-box');
+
+if (presionSlider) {
+  presionSlider.addEventListener('input', () => {
+    const presion = Number(presionSlider.value);
+    presionValor.textContent = presion;
+
+    // 980 hPa (tormenta fuerte) -> 1030 hPa (despejado)
+    const porcentaje = ((1030 - presion) / (1030 - 980)) * 100;
+    aveIcono.style.top = `${20 + porcentaje * 0.6}%`;
+
+    if (presion >= 1018) {
+      estadoTormenta.textContent = 'Todo tranquilo';
+      cieloBox.style.background = 'linear-gradient(180deg, #4a90b8 0%, #1c4a5e 100%)';
+    } else if (presion >= 1000) {
+      estadoTormenta.textContent = 'Cambios en el ambiente';
+      cieloBox.style.background = 'linear-gradient(180deg, #2a5a72 0%, #15323c 100%)';
+    } else {
+      estadoTormenta.textContent = 'Tormenta cercana';
+      cieloBox.style.background = 'linear-gradient(180deg, #1a3a4a 0%, #0a1a20 100%)';
+    }
+  });
+}
+
+// Visual: ciclo completo de la tormenta
+const cicloSlider = document.getElementById('cicloSlider');
+const cicloBox = document.getElementById('cicloBox');
+const cicloIcono = document.getElementById('cicloIcono');
+const cicloEtapa = document.getElementById('cicloEtapa');
+
+const ETAPAS_CICLO = [
+  { hasta: 20, icono: '🌬️', texto: 'Aire cálido asciende', fondo: '#4a90b8' },
+  { hasta: 40, icono: '☁️', texto: 'La nube se forma', fondo: '#5a7a8a' },
+  { hasta: 60, icono: '⚡', texto: 'Se generan los rayos', fondo: '#3a3a4a' },
+  { hasta: 80, icono: '🌧️', texto: 'Cae la lluvia', fondo: '#2a4a5a' },
+  { hasta: 100, icono: '🌤️', texto: 'La tormenta se disipa', fondo: '#3a7a6a' },
+];
+
+if (cicloSlider) {
+  cicloSlider.addEventListener('input', () => {
+    const valor = Number(cicloSlider.value);
+    const etapa = ETAPAS_CICLO.find((e) => valor <= e.hasta) || ETAPAS_CICLO[ETAPAS_CICLO.length - 1];
+    cicloIcono.textContent = etapa.icono;
+    cicloEtapa.textContent = etapa.texto;
+    cicloBox.style.background = etapa.fondo;
+  });
+}
+
 // Reto: mini quiz interactivo
 const quizQuestions = document.querySelectorAll('.quiz-question');
 const quizResult = document.getElementById('quizResult');

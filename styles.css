@@ -755,6 +755,7 @@ a {
 
 .conclusion-card p {
   font-size: 1.05rem;
+  color: var(--color-light) !important;
 }
 
 /* FOOTER */
@@ -773,17 +774,6 @@ a {
 
 .footer-top p {
   margin: 0.2rem 0;
-}
-
-.footer-wordmark {
-  text-align: center;
-  font-size: clamp(2.8rem, 14vw, 9rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--color-lime);
-  line-height: 1;
-  padding: 0 0.5rem 0.5rem;
-  white-space: nowrap;
 }
 
 /* RESPONSIVE */
@@ -819,9 +809,5 @@ a {
 
   .ciencia-grid {
     grid-template-columns: 1fr;
-  }
-
-  .footer-wordmark {
-    font-size: 12vw;
   }
 }

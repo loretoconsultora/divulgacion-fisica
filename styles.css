@@ -180,6 +180,7 @@ a {
 .section > .quiz-container,
 .section > .minijuego-placeholder,
 .section > .media-grid,
+.section > .podcast-grid,
 .section > .autor-card {
   max-width: 1100px;
   margin-left: auto;
@@ -729,6 +730,76 @@ a {
   color: var(--ink-muted);
 }
 
+.video-title {
+  text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 0.75rem !important;
+  width: 100%;
+}
+
+.video-subtitle {
+  text-align: center !important;
+  max-width: 640px !important;
+  margin: 0 auto 2.5rem !important;
+  width: 100%;
+}
+
+#video > .badge {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* PODCAST */
+.podcast-title {
+  text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 0.75rem !important;
+  width: 100%;
+}
+
+.podcast-subtitle {
+  text-align: center !important;
+  max-width: 640px !important;
+  margin: 0 auto 2.5rem !important;
+  width: 100%;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.podcast-card h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.audio-upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  text-align: center;
+}
+
+.audio-upload-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--light-text-muted);
+}
+
+.audio-upload {
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--light-text-muted);
+}
+
+.audio-player {
+  width: 100%;
+}
+
 /* AUTOR */
 .autor-card {
   display: flex;
@@ -818,6 +889,10 @@ a {
   }
 
   .ciencia-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .podcast-grid {
     grid-template-columns: 1fr;
   }
 }

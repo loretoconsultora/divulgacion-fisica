@@ -224,18 +224,15 @@
 
     <!-- VIDEO EXPLICATIVO -->
     <section id="video" class="section bg-light">
-      <span class="badge">Video explicativo</span>
-      <h2>Video explicativo</h2>
-      <p class="section-intro">Estos espacios se completarán cuando el material esté grabado.</p>
+      <span class="badge">Multimedia</span>
+      <h2 class="video-title">Video explicativo</h2>
+      <p class="section-intro video-subtitle">Estos espacios se completarán cuando el material esté grabado.</p>
 
       <div class="media-grid">
         <div class="card media-card">
-          <h3>Videos</h3>
+          <h3>Video</h3>
           <div class="media-placeholder media-placeholder-light">
-            <p>Espacio reservado para video 1<br><span class="muted">(próximamente)</span></p>
-          </div>
-          <div class="media-placeholder media-placeholder-light">
-            <p>Espacio reservado para video 2<br><span class="muted">(próximamente)</span></p>
+            <p>Espacio reservado para video<br><span class="muted">(próximamente)</span></p>
           </div>
         </div>
       </div>
@@ -243,21 +240,34 @@
 
     <!-- PODCAST -->
     <section id="podcast" class="section bg-dark">
-      <span class="badge badge-on-dark">Podcast</span>
-      <h2 class="on-dark">Podcast</h2>
-      <p class="section-intro on-dark-muted">Escucha más sobre el fenómeno de las Tormentas según la ciencia</p>
+      <h2 class="on-dark podcast-title">Podcast</h2>
+      <p class="section-intro on-dark-muted podcast-subtitle">Escucha más sobre el fenómeno de las Tormentas según la ciencia</p>
 
-      <div class="media-grid">
-        <div class="card card-dark media-card">
-          <h3>Episodios</h3>
-          <div class="media-placeholder">
-            <p>Episodio 1: Física del rayo<br><span class="muted">(próximamente)</span></p>
+      <div class="podcast-grid">
+        <div class="card card-dark podcast-card">
+          <h3>Episodio 1: Física del rayo</h3>
+          <div class="audio-upload-box">
+            <label class="audio-upload-label" for="audioUpload1">Subir archivo de audio</label>
+            <input type="file" accept="audio/*" class="audio-upload" id="audioUpload1">
+            <audio controls class="audio-player" id="audioPlayer1"></audio>
           </div>
-          <div class="media-placeholder">
-            <p>Episodio 2: Química del olor a lluvia<br><span class="muted">(próximamente)</span></p>
+        </div>
+
+        <div class="card card-dark podcast-card">
+          <h3>Episodio 2: Química del olor a lluvia</h3>
+          <div class="audio-upload-box">
+            <label class="audio-upload-label" for="audioUpload2">Subir archivo de audio</label>
+            <input type="file" accept="audio/*" class="audio-upload" id="audioUpload2">
+            <audio controls class="audio-player" id="audioPlayer2"></audio>
           </div>
-          <div class="media-placeholder">
-            <p>Episodio 3: Biología de la anticipación animal y vegetal<br><span class="muted">(próximamente)</span></p>
+        </div>
+
+        <div class="card card-dark podcast-card">
+          <h3>Episodio 3: Biología de la anticipación animal y vegetal</h3>
+          <div class="audio-upload-box">
+            <label class="audio-upload-label" for="audioUpload3">Subir archivo de audio</label>
+            <input type="file" accept="audio/*" class="audio-upload" id="audioUpload3">
+            <audio controls class="audio-player" id="audioPlayer3"></audio>
           </div>
         </div>
       </div>

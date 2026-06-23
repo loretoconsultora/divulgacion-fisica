@@ -184,8 +184,8 @@
     <!-- VISUALES -->
     <section id="visuales" class="section bg-dark">
       <span class="badge badge-on-dark">Visuales</span>
-      <h2 class="on-dark">Comparaciones interactivas</h2>
-      <p class="section-intro on-dark-muted">Mueve los controles para entender mejor los conceptos físicos detrás de la tormenta.</p>
+      <h2 class="on-dark visuales-title">Explicación interactiva</h2>
+      <p class="section-intro on-dark-muted visuales-subtitle">Mueve los controles para entender mejor los conceptos físicos, químicos y biológicos detrás de la tormenta.</p>
 
       <div class="visual-grid">
         <div class="card card-dark visual-card">
@@ -210,6 +210,31 @@
             <p>Fuerza necesaria (con aceleración fija de 5 m/s²): <span id="fuerzaValor">5</span> N</p>
             <div class="bar-chart">
               <div class="bar fuerza" id="barFuerza"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-dark visual-card">
+          <h3>Presión atmosférica y comportamiento animal</h3>
+          <p>Antes de una tormenta, la presión atmosférica cae. Muchos animales detectan ese cambio y ajustan su vuelo o comportamiento en consecuencia.</p>
+          <div class="slider-container">
+            <input type="range" min="980" max="1030" value="1013" class="slider" id="presionSlider">
+            <p>Presión atmosférica: <span id="presionValor">1013</span> hPa</p>
+            <div class="cielo-box">
+              <div class="ave-icono" id="aveIcono">🐦</div>
+            </div>
+            <p class="slider-label" id="estadoTormenta">Todo tranquilo</p>
+          </div>
+        </div>
+
+        <div class="card card-dark visual-card">
+          <h3>Ciclo completo de la tormenta</h3>
+          <p>Desliza la línea de tiempo para recorrer las etapas de una tormenta, desde que el aire comienza a subir hasta que el cielo se despeja.</p>
+          <div class="slider-container">
+            <input type="range" min="0" max="100" value="0" class="slider" id="cicloSlider">
+            <div class="ciclo-box" id="cicloBox">
+              <div class="ciclo-icono" id="cicloIcono">🌬️</div>
+              <p class="ciclo-etapa" id="cicloEtapa">Aire cálido asciende</p>
             </div>
           </div>
         </div>

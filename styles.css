@@ -705,6 +705,10 @@ a {
   color: var(--color-light);
 }
 
+.media-card:not(.card-dark) h3 {
+  color: var(--ink);
+}
+
 .media-placeholder {
   background: rgba(242, 241, 241, 0.04);
   border: 1px dashed var(--border-dark);
@@ -717,6 +721,12 @@ a {
   color: var(--light-text-muted);
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
+}
+
+.media-placeholder-light {
+  background: rgba(12, 43, 58, 0.03);
+  border: 1px dashed var(--border-light);
+  color: var(--ink-muted);
 }
 
 /* AUTOR */
@@ -755,7 +765,7 @@ a {
 
 .conclusion-card p {
   font-size: 1.05rem;
-  color: var(--color-light) !important;
+  color: var(--ink-muted) !important;
 }
 
 /* FOOTER */

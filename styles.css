@@ -701,8 +701,13 @@ a {
   gap: 1.5rem;
 }
 
+.media-card {
+  text-align: center;
+}
+
 .media-card h3 {
   margin-top: 0;
+  text-align: center;
   color: var(--color-light);
 }
 
@@ -771,29 +776,18 @@ a {
   gap: 1.5rem;
 }
 
+.podcast-card {
+  text-align: center;
+}
+
 .podcast-card h3 {
   text-align: center;
   margin-top: 0;
 }
 
-.audio-upload-box {
+.audio-player-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.7rem;
-  text-align: center;
-}
-
-.audio-upload-label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--light-text-muted);
-}
-
-.audio-upload {
-  width: 100%;
-  font-size: 0.85rem;
-  color: var(--light-text-muted);
+  justify-content: center;
 }
 
 .audio-player {

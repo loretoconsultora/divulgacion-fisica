@@ -489,6 +489,25 @@ a {
 }
 
 /* VISUALES */
+.visuales-title {
+  text-align: center !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visuales-subtitle {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#visuales > .badge {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .visual-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -557,6 +576,49 @@ a {
   color: var(--light-text-muted);
   font-size: 0.85rem;
   text-align: center;
+}
+
+/* Visual: presión y comportamiento animal */
+.cielo-box {
+  position: relative;
+  height: 160px;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #2a5a72 0%, #0e2730 100%);
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.ave-icono {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  transition: top 0.25s ease-out;
+}
+
+/* Visual: ciclo completo de la tormenta */
+.ciclo-box {
+  border-radius: var(--radius);
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #2a5a72;
+  transition: background 0.4s ease;
+  margin-bottom: 0.5rem;
+}
+
+.ciclo-icono {
+  font-size: 2.6rem;
+  margin-bottom: 0.6rem;
+  transition: transform 0.2s ease;
+}
+
+.ciclo-etapa {
+  color: var(--color-light);
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .infografia-placeholder h3,

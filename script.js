@@ -79,6 +79,30 @@ if (cicloSlider) {
   });
 }
 
+// Visual: ozono y petricor en el aire
+const quimicaSlider = document.getElementById('quimicaSlider');
+const quimicaBox = document.getElementById('quimicaBox');
+const quimicaIcono = document.getElementById('quimicaIcono');
+const quimicaEtapa = document.getElementById('quimicaEtapa');
+
+const ETAPAS_QUIMICA = [
+  { hasta: 20, icono: '🌫️', texto: 'Aire en calma, sin olor particular', fondo: '#3a4a3a' },
+  { hasta: 40, icono: '🌧️', texto: 'Caen las primeras gotas: aparece el petricor', fondo: '#3a5a4a' },
+  { hasta: 60, icono: '⚡', texto: 'Los rayos rompen moléculas de N₂ y O₂', fondo: '#4a4a3a' },
+  { hasta: 80, icono: '🧪', texto: 'Se forma ozono (O₃): olor "metálico" en el aire', fondo: '#5a6a3a' },
+  { hasta: 100, icono: '💨', texto: 'Máxima concentración de ozono y petricor', fondo: '#6a7a3a' },
+];
+
+if (quimicaSlider) {
+  quimicaSlider.addEventListener('input', () => {
+    const valor = Number(quimicaSlider.value);
+    const etapa = ETAPAS_QUIMICA.find((e) => valor <= e.hasta) || ETAPAS_QUIMICA[ETAPAS_QUIMICA.length - 1];
+    quimicaIcono.textContent = etapa.icono;
+    quimicaEtapa.textContent = etapa.texto;
+    quimicaBox.style.background = etapa.fondo;
+  });
+}
+
 // Reto: mini quiz interactivo
 const quizQuestions = document.querySelectorAll('.quiz-question');
 const quizResult = document.getElementById('quizResult');

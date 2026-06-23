@@ -490,15 +490,24 @@ a {
 /* VISUALES */
 .visuales-title {
   text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 0.75rem !important;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .visuales-subtitle {
   text-align: center !important;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 640px !important;
+  margin: 0 auto 2.5rem !important;
+  width: 100%;
+}
+
+.visual-card-tag {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-lime);
+  margin-bottom: 0.4rem;
 }
 
 #visuales > .badge {

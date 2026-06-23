@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto | Divulgación Científica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span>Divulgación Científica</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reto.html">Reto</a></li>
+        <li><a href="autor.html">Sobre el autor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- RETO -->
+    <section id="reto" class="section bg-light">
+      <span class="badge">Reto</span>
+      <h2>Pon a prueba lo que aprendiste</h2>
+      <p class="section-intro">Responde estas 3 preguntas sobre la tormenta vista desde la física, la química y la biología.</p>
+
+      <div class="card quiz-container" id="quizContainer">
+        <div class="quiz-question" data-question="1">
+          <h3>1. ¿Por qué vemos el rayo antes de escuchar el trueno?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option">Porque el rayo ocurre antes que el trueno</button>
+            <button class="quiz-option correct">Porque la luz viaja más rápido que el sonido</button>
+            <button class="quiz-option">Porque el sonido se pierde en las nubes</button>
+          </div>
+          <p class="quiz-feedback"></p>
+        </div>
+
+        <div class="quiz-question" data-question="2">
+          <h3>2. ¿Qué compuesto producido por bacterias del suelo es responsable del característico olor a lluvia?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option">Ozono</button>
+            <button class="quiz-option correct">Geosmina</button>
+            <button class="quiz-option">Nitrógeno líquido</button>
+          </div>
+          <p class="quiz-feedback"></p>
+        </div>
+
+        <div class="quiz-question" data-question="3">
+          <h3>3. ¿Cómo es que algunos animales anticipan la llegada de una tormenta?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option correct">Detectan cambios de presión atmosférica e infrasonidos</button>
+            <button class="quiz-option">Reciben mensajes de otros animales</button>
+            <button class="quiz-option">No pueden anticiparla, es un mito</button>
+          </div>
+          <p class="quiz-feedback"></p>
+        </div>
+
+        <div class="quiz-result" id="quizResult"></div>
+        <button class="btn-pill solid" id="quizReset">Reiniciar reto</button>
+      </div>
+
+      <div class="card minijuego-placeholder">
+        <h3>Mini-juego</h3>
+        <p>Espacio reservado para un mini-juego interactivo adicional sobre la tormenta (próxima fase del proyecto).</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <p>Proyecto de divulgación científica — La Tormenta: Física, Química y Biología</p>
+      <p>Autor: Diego de Jesús Arias</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

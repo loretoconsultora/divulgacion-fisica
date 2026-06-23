@@ -36,9 +36,9 @@
       </div>
       <div class="hero-content">
         <span class="badge badge-on-dark">Proyecto escolar de divulgación científica</span>
-        <h1>La Tormenta: un mismo fenómeno, tres miradas científicas.</h1>
+        <h1>Un fenómeno extraordinario de la naturaleza y de la ciencia.</h1>
         <div class="hero-actions">
-          <a href="#temas" class="btn-pill solid">Explorar los temas</a>
+          <a href="#temas" class="btn-pill green">Explorar con la ciencia</a>
           <a href="#reto" class="btn-pill outline-on-dark">Tomar el reto</a>
         </div>
       </div>
@@ -46,11 +46,12 @@
 
     <!-- TEMAS -->
     <section id="temas" class="section bg-light">
-      <span class="badge">Temas</span>
-      <h2>Fenómenos cotidianos, explicados desde tres ciencias</h2>
-      <p class="section-intro">Física, química y biología se cruzan en algo tan simple como una tormenta. Elige una disciplina para explorar sus artículos.</p>
+      <h2 class="temas-title">
+        Un fenómeno cotidiano<br>
+        <span class="temas-subtitle">Explicado desde la física, la química y la biología</span>
+      </h2>
 
-      <div class="tabs-disciplina">
+      <div class="tabs-disciplina centered">
         <button class="tab-btn active" data-tab="fisica">Física</button>
         <button class="tab-btn" data-tab="quimica">Química</button>
         <button class="tab-btn" data-tab="biologia">Biología</button>
@@ -58,81 +59,62 @@
 
       <!-- FÍSICA -->
       <div class="tab-content active" id="fisica">
-        <article class="card articulo">
-          <h3>Lentes empañados</h3>
-          <p class="meta">Introducción</p>
-          <p>¿Por qué tus lentes se empañan justo antes de que empiece a llover o al entrar de la calle fría a un lugar cálido? La respuesta está en un proceso físico llamado condensación.</p>
-          <p class="meta">Desarrollo</p>
-          <p>El aire siempre contiene vapor de agua, una cantidad que varía según la temperatura. Cuando una superficie fría (como el cristal de tus lentes) entra en contacto con aire más cálido y húmedo, la superficie enfría bruscamente el aire que la rodea. Al bajar la temperatura, el aire pierde su capacidad de retener tanto vapor de agua, y el exceso se condensa en gotitas microscópicas sobre la superficie fría. Antes de una tormenta, la humedad relativa del ambiente aumenta considerablemente, lo que hace este efecto aún más notorio.</p>
-          <p class="meta">Cierre</p>
-          <p>Este mismo principio físico explica el empañamiento de ventanas, espejos del baño y parabrisas: siempre que hay una diferencia de temperatura entre una superficie y el aire húmedo que la rodea, ocurre condensación.</p>
-        </article>
-
-        <article class="card articulo">
-          <h3>El refrigerador y la transferencia de calor</h3>
-          <p class="meta">Introducción</p>
-          <p>Un refrigerador no "crea frío": en realidad extrae calor del interior y lo expulsa hacia afuera, aplicando los mismos principios termodinámicos que mueven las masas de aire en una tormenta.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Dentro del refrigerador circula un gas refrigerante que absorbe calor al evaporarse (enfriando el interior) y lo libera al condensarse en la parte trasera (calentando el ambiente exterior). Este ciclo de evaporación-condensación es exactamente el mismo mecanismo que impulsa la convección atmosférica: el aire caliente y húmedo asciende, se enfría, libera su calor latente al condensarse en nubes, y esa energía liberada alimenta la tormenta.</p>
-          <p class="meta">Cierre</p>
-          <p>Entender el refrigerador ayuda a entender por qué las tormentas son, en el fondo, gigantescas máquinas de transferencia de calor y energía.</p>
-        </article>
-
-        <article class="card articulo">
-          <h3>Rayos y truenos</h3>
-          <p class="meta">Introducción</p>
-          <p>El rayo es una descarga eléctrica gigante, y el trueno es el sonido que produce esa descarga al calentar el aire de forma casi instantánea.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Dentro de una nube de tormenta, el roce entre partículas de hielo y agua genera una separación de cargas eléctricas: las cargas negativas se acumulan en la parte baja de la nube y las positivas en la parte alta (o en el suelo). Cuando la diferencia de potencial es suficientemente grande, el aire se ioniza y permite el paso de una corriente eléctrica intensísima: el rayo. Este calienta el aire circundante hasta unos 30,000 °C en microsegundos, provocando una expansión explosiva que viaja como onda de sonido: el trueno.</p>
-          <p class="meta">Cierre</p>
-          <p>Como la luz viaja mucho más rápido que el sonido, vemos el rayo antes de escuchar el trueno; contando los segundos entre ambos podemos estimar a qué distancia ocurrió la descarga.</p>
-        </article>
+        <div class="ciencia-grid">
+          <div class="ciencia-texto">
+            <h3>La tormenta desde la física</h3>
+            <p class="meta">Explicación</p>
+            <p>Una tormenta es, ante todo, un fenómeno de transferencia de energía: calor, electricidad y movimiento se combinan en la atmósfera para producir viento, lluvia, rayos y truenos.</p>
+            <p class="meta">Causas</p>
+            <p>El aire cálido y húmedo asciende y se enfría, liberando energía al condensarse en nubes. El roce entre partículas de hielo y agua dentro de la nube separa cargas eléctricas, acumulando carga negativa en su base y positiva en su parte alta.</p>
+            <p class="meta">Consecuencias</p>
+            <p>Cuando la diferencia de carga es suficiente, ocurre una descarga eléctrica: el rayo. Este calienta el aire a más de 30,000 °C en microsegundos, generando una onda expansiva que escuchamos como trueno, además de fuertes vientos y cambios bruscos de presión.</p>
+            <p class="meta">Aplicaciones</p>
+            <p>Comprender la física de la tormenta permite diseñar pararrayos, sistemas de alerta temprana y radares meteorológicos que anticipan su trayectoria e intensidad.</p>
+          </div>
+          <div class="ciencia-diagrama">
+            <span>Diagrama o foto<br><span class="muted">(próximamente)</span></span>
+          </div>
+        </div>
       </div>
 
       <!-- QUÍMICA -->
       <div class="tab-content" id="quimica">
-        <article class="card articulo">
-          <h3>El olor a lluvia (petricor)</h3>
-          <p class="meta">Introducción</p>
-          <p>Ese olor característico que aparece justo antes o durante la lluvia tiene nombre: petricor, y es resultado de varios compuestos químicos liberados al ambiente.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Una parte del olor proviene de la geosmina, un compuesto orgánico producido por bacterias del suelo (actinomicetos), que el impacto de las gotas de lluvia libera al aire en forma de aerosol. Otra parte proviene de aceites liberados por las plantas durante periodos secos, que se acumulan en rocas y suelo hasta que la lluvia los libera. Además, las tormentas eléctricas generan ozono (O₃) en la atmósfera superior gracias a la energía de los rayos, y parte de ese ozono desciende, aportando un aroma "fresco" o "metálico" que también asociamos con la tormenta.</p>
-          <p class="meta">Cierre</p>
-          <p>El olfato humano es extremadamente sensible a la geosmina, lo que explica por qué este aroma es tan reconocible incluso en concentraciones mínimas.</p>
-        </article>
-
-        <article class="card articulo">
-          <h3>La química de la electricidad atmosférica</h3>
-          <p class="meta">Introducción</p>
-          <p>Además del espectáculo eléctrico, los rayos provocan reacciones químicas en la atmósfera que afectan la composición del aire que respiramos.</p>
-          <p class="meta">Desarrollo</p>
-          <p>La enorme energía de un rayo puede romper las moléculas de nitrógeno (N₂) y oxígeno (O₂) del aire, que normalmente son muy estables. Los átomos liberados se recombinan formando óxidos de nitrógeno (NOx) y ozono (O₃). Los óxidos de nitrógeno, arrastrados por la lluvia, terminan fertilizando el suelo de forma natural, ya que el nitrógeno es un nutriente esencial para las plantas.</p>
-          <p class="meta">Cierre</p>
-          <p>Así, cada tormenta eléctrica actúa, a pequeña escala, como una fábrica natural de fertilizante atmosférico.</p>
-        </article>
+        <div class="ciencia-grid">
+          <div class="ciencia-texto">
+            <h3>La tormenta desde la química</h3>
+            <p class="meta">Explicación</p>
+            <p>Una tormenta también es un laboratorio atmosférico: libera y transforma compuestos químicos en el aire, el suelo y las plantas que la rodean.</p>
+            <p class="meta">Causas</p>
+            <p>La energía de los rayos rompe moléculas estables de nitrógeno y oxígeno, que se recombinan formando óxidos de nitrógeno y ozono. El impacto de las gotas sobre el suelo libera geosmina, un compuesto producido por bacterias, junto con aceites acumulados en plantas y rocas.</p>
+            <p class="meta">Consecuencias</p>
+            <p>De ahí surge el petricor, ese olor característico antes y durante la lluvia, y el aroma "metálico" asociado al ozono. Los óxidos de nitrógeno arrastrados por la lluvia terminan fertilizando el suelo de forma natural.</p>
+            <p class="meta">Aplicaciones</p>
+            <p>Estos procesos químicos se estudian para entender la calidad del aire, mejorar prácticas agrícolas y desarrollar sensores capaces de detectar tormentas por su firma química.</p>
+          </div>
+          <div class="ciencia-diagrama">
+            <span>Diagrama o foto<br><span class="muted">(próximamente)</span></span>
+          </div>
+        </div>
       </div>
 
       <!-- BIOLOGÍA -->
       <div class="tab-content" id="biologia">
-        <article class="card articulo">
-          <h3>Animales que anticipan la tormenta</h3>
-          <p class="meta">Introducción</p>
-          <p>Muchos animales muestran cambios de comportamiento horas antes de que llegue una tormenta, mucho antes de que los humanos noten cualquier señal.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Se cree que algunos animales detectan la caída de presión atmosférica que antecede a las tormentas a través de receptores en el oído interno o en estructuras sensibles a la presión. Las aves, por ejemplo, suelen volar más bajo y buscar refugio cuando la presión baja, porque volar a gran altura se vuelve más difícil. Otros animales podrían percibir cambios en el campo electromagnético atmosférico o detectar infrasonidos (sonidos de muy baja frecuencia) generados por tormentas lejanas, que viajan grandes distancias antes de que la tormenta sea visible.</p>
-          <p class="meta">Cierre</p>
-          <p>Estas adaptaciones sensoriales son producto de la evolución: detectar el peligro con anticipación aumenta las probabilidades de supervivencia.</p>
-        </article>
-
-        <article class="card articulo">
-          <h3>Plantas y la respuesta a la lluvia</h3>
-          <p class="meta">Introducción</p>
-          <p>Las plantas también "responden" a la llegada de una tormenta, aunque no de forma consciente, sino a través de mecanismos fisiológicos.</p>
-          <p class="meta">Desarrollo</p>
-          <p>Ante la caída de humedad relativa y presión que anticipan la lluvia, muchas plantas cierran parcialmente sus estomas (los poros de las hojas) para regular la pérdida de agua. Algunas especies liberan compuestos volátiles (los mismos aceites que contribuyen al petricor) como parte de su respuesta al estrés hídrico de la temporada seca. Cuando finalmente llega el agua, las raíces aumentan la absorción y se reactivan procesos metabólicos que estaban en pausa.</p>
-          <p class="meta">Cierre</p>
-          <p>Esto demuestra que las plantas, aunque inmóviles, tienen mecanismos biológicos finamente ajustados para responder a los cambios atmosféricos que preceden a una tormenta.</p>
-        </article>
+        <div class="ciencia-grid">
+          <div class="ciencia-texto">
+            <h3>La tormenta desde la biología</h3>
+            <p class="meta">Explicación</p>
+            <p>Los seres vivos no solo sufren la tormenta: muchos la perciben antes de que llegue y ajustan su comportamiento o fisiología en consecuencia.</p>
+            <p class="meta">Causas</p>
+            <p>La caída de presión atmosférica, los infrasonidos y los cambios en el campo electromagnético que preceden a la tormenta son detectados por receptores sensoriales en animales, mientras que las plantas responden a la caída de humedad y presión cerrando parcialmente sus estomas.</p>
+            <p class="meta">Consecuencias</p>
+            <p>Las aves vuelan más bajo y buscan refugio, otros animales se inquietan o se esconden, y las plantas reducen su pérdida de agua y liberan compuestos volátiles como parte de su respuesta al estrés ambiental.</p>
+            <p class="meta">Aplicaciones</p>
+            <p>Estas respuestas biológicas inspiran el uso de animales y plantas como bioindicadores naturales, complementando los sistemas de alerta temprana ante tormentas.</p>
+          </div>
+          <div class="ciencia-diagrama">
+            <span>Diagrama o foto<br><span class="muted">(próximamente)</span></span>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -620,6 +620,27 @@ a {
   opacity: 0.8;
 }
 
+/* RETO */
+.reto-badge {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.reto-title {
+  text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 0.75rem !important;
+  width: 100%;
+}
+
+.reto-subtitle {
+  text-align: center !important;
+  max-width: 640px !important;
+  margin: 0 auto 2.5rem !important;
+  width: 100%;
+}
+
 /* QUIZ */
 .quiz-question {
   margin-bottom: 2rem;

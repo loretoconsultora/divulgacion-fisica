@@ -16,14 +16,9 @@
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#temas">Temas</a></li>
-        <li><a href="#visuales">Visuales</a></li>
-        <li><a href="#reto">Reto</a></li>
-        <li><a href="#multimedia">Multimedia</a></li>
-        <li><a href="#autor">Sobre el autor</a></li>
-        <li><a href="#conclusion">Conclusión</a></li>
+        <li><a href="reto.html">Reto</a></li>
+        <li><a href="autor.html">Sobre el autor</a></li>
       </ul>
-      <a href="#reto" class="btn-pill solid nav-cta">Ir al reto</a>
     </nav>
   </header>
 
@@ -39,7 +34,7 @@
         <h1>Un fenómeno extraordinario de la naturaleza y de la ciencia.</h1>
         <div class="hero-actions">
           <a href="#temas" class="btn-pill green">Explorar con la ciencia</a>
-          <a href="#reto" class="btn-pill outline-on-dark">Tomar el reto</a>
+          <a href="reto.html" class="btn-pill outline-on-dark">Tomar el reto</a>
         </div>
       </div>
     </section>
@@ -227,53 +222,6 @@
       </div>
     </section>
 
-    <!-- RETO -->
-    <section id="reto" class="section bg-light">
-      <span class="badge">Reto</span>
-      <h2>Pon a prueba lo que aprendiste</h2>
-      <p class="section-intro">Responde estas 3 preguntas sobre la tormenta vista desde la física, la química y la biología.</p>
-
-      <div class="card quiz-container" id="quizContainer">
-        <div class="quiz-question" data-question="1">
-          <h3>1. ¿Por qué vemos el rayo antes de escuchar el trueno?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option">Porque el rayo ocurre antes que el trueno</button>
-            <button class="quiz-option correct">Porque la luz viaja más rápido que el sonido</button>
-            <button class="quiz-option">Porque el sonido se pierde en las nubes</button>
-          </div>
-          <p class="quiz-feedback"></p>
-        </div>
-
-        <div class="quiz-question" data-question="2">
-          <h3>2. ¿Qué compuesto producido por bacterias del suelo es responsable del característico olor a lluvia?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option">Ozono</button>
-            <button class="quiz-option correct">Geosmina</button>
-            <button class="quiz-option">Nitrógeno líquido</button>
-          </div>
-          <p class="quiz-feedback"></p>
-        </div>
-
-        <div class="quiz-question" data-question="3">
-          <h3>3. ¿Cómo es que algunos animales anticipan la llegada de una tormenta?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option correct">Detectan cambios de presión atmosférica e infrasonidos</button>
-            <button class="quiz-option">Reciben mensajes de otros animales</button>
-            <button class="quiz-option">No pueden anticiparla, es un mito</button>
-          </div>
-          <p class="quiz-feedback"></p>
-        </div>
-
-        <div class="quiz-result" id="quizResult"></div>
-        <button class="btn-pill solid" id="quizReset">Reiniciar reto</button>
-      </div>
-
-      <div class="card minijuego-placeholder">
-        <h3>Mini-juego</h3>
-        <p>Espacio reservado para un mini-juego interactivo adicional sobre la tormenta (próxima fase del proyecto).</p>
-      </div>
-    </section>
-
     <!-- MULTIMEDIA -->
     <section id="multimedia" class="section bg-dark">
       <span class="badge badge-on-dark">Multimedia</span>
@@ -302,20 +250,6 @@
           <div class="media-placeholder">
             <p>Episodio 3: Biología de la anticipación animal y vegetal<br><span class="muted">(próximamente)</span></p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE EL AUTOR -->
-    <section id="autor" class="section bg-light">
-      <span class="badge">Sobre el autor</span>
-      <h2>El equipo detrás del proyecto</h2>
-      <div class="card autor-card">
-        <img src="assets/foto-autor.jpg" alt="Foto del autor" class="autor-foto" onerror="this.src='assets/placeholder.svg'">
-        <div class="autor-info">
-          <h3>Diego de Jesús Arias</h3>
-          <p>Autor de este proyecto de divulgación científica, enfocado en explicar un fenómeno cotidiano —la tormenta— desde la perspectiva de la física, la química y la biología.</p>
-          <p>Proyecto individual realizado como parte de una evaluación escolar de divulgación científica.</p>
         </div>
       </div>
     </section>
